@@ -179,7 +179,7 @@
     transform: scale(0.5) translateY(-15px);
 }
 
-/* PHONE LANDSCAPE */
+/* PHONE PORTRAIT */
 @media (max-width: 991px){
     .flex-container,
     .flex-container header {
@@ -202,10 +202,11 @@
    
 }
 
-@media (max-height: 400px){
+/* PHONE lANDSCAPE*/
+@media (max-width: 500px){
     .flex-container,
     .flex-container header {
-        padding: 35px;
+        padding: 40px;
 
     }  
 
