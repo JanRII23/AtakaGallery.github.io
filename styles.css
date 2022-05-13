@@ -195,8 +195,8 @@
     transform: scale(0.5) translateY(-15px);
 }
 
-/* PHONE PORTRAIT & LANDSCAPE*/
-@media (max-width: 1000px){
+/* PHONE PORTRAIT */
+@media (max-width: 1000px) and (orientation: portrait){
     body {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -242,9 +242,51 @@
     .social_nightMode{
         left: 15px;
     }
-
-
    
+}
+
+/* PHONE PORTRAIT */
+@media (max-width: 1000px) and (orientation: landscape){
+    body {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+        padding-top: constant(safe-area-inset-top);
+        padding-bottom: constant(safe-area-inset-bottom);
+    }
+
+    .flex-container,
+    .flex-container header {
+        padding: 40px;
+        
+        
+    }
+
+
+ 
+    .text1 h2{
+        font-size: 2em;
+    }
+
+    .text1 a{
+        font-size: 1em;
+    }
+
+    .text1 h3, p{
+        /* font-size: 1em; */
+        display: none;
+    }
+    .backgroundVideo{
+        display: none;
+    }
+
+    .pins{
+        position: absolute;
+        left: 55%;
+        padding: 0;
+        margin: 0;
+        width: 12%;
+    }
+
 }
 
 .menu {
