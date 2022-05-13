@@ -179,45 +179,26 @@
     transform: scale(0.5) translateY(-15px);
 }
 
-/* PHONE PORTRAIT */
+/* PHONE PORTRAIT & LANDSCAPE*/
 @media (max-width: 991px){
-    /* .flex-container,
-    .flex-container header {
+    *{
+        padding-left: constant(safe-area-inset-left);
+        padding-right: cosntant(safe-area-inset-right);
+    }
+
+    .flex-container,
+    .flex-container header{
         padding: 40px;
-    } */
+    }
  
 
     .text1 h2{
-        font-size: 3em;
-    }
-
-    .text1 h3, p{
-        /* font-size: 1em; */
-        display: none;
-    }
-    .backgroundVideo{
-        display: none;
-    }
-
-   
-}
-
-/* PHONE lANDSCAPE*/
-@media (max-width: 500px){
-    /* .flex-container,
-    .flex-container header {
-        padding: 40px;
-
-    }   */
-
-    .text1 h2{
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .text1 a{
-        font-size: 0.5em;
+        font-size: 1em;
     }
-
 
     .text1 h3, p{
         /* font-size: 1em; */
@@ -229,7 +210,6 @@
 
    
 }
-
 
 .menu {
     display:none;
