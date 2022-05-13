@@ -15,16 +15,29 @@
     min-height: 100vh;
     padding: 100px;
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items: center;
     background: black;
     color: white;
     z-index: 2;
 }
 
-.logo{
-    text-transform: uppecase;
+.mainTitle{
+    text-transform: uppercase;
     cursor: pointer;
+}
+
+.miscTitle{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+    
 }
 
 .flex-container header{
@@ -42,19 +55,22 @@
 
 .menu-toggle{
     position: relative;
-    width: 60px;
-    height: 60px;
-    /* background: url('Ataka.jpg'); */
+    width: 80px;
+    height: 80px;
+    background: url('circularLogo.png'); 
     background-repeat: no-repeat;
-    background-size: 30px;
+    background-size: 70px;
     background-position: center;
+    cursor: pointer;
+    
 }
 
 .menu-toggle.active{
-    /* background: url('Ataka.jpg'); */
+    background: url('circularLogo.png');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
+    
 }
 
 .flex-container .background { 
@@ -64,7 +80,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .backgroundOverlay{
@@ -96,20 +112,17 @@
     z-index: 10;
 }
 
-.text1{
-    border: 2px solid black;
-}
 
 .text1 h2{
     font-size: 5em;
     font-weight: 800;
-    line-height: 1em;
+    line-height: 2em;
     text-transform: uppercase;
 
 }
 
 .text1 h3{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
@@ -120,6 +133,7 @@
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
+
 }
 
 .text1 a{
@@ -139,20 +153,21 @@
     letter-spacing: 6px;
 }
 
-.social {
+.social_nightMode {
     position: absolute;
     bottom: 20px;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.social li{
+.social_nightMode li{
     list-style: none;
 }
 
-.social li a{
+.social_nightMode li a{
     display:inline-block;
     /* filter: invert(1); */
     /* margin-right: px; */
@@ -160,23 +175,58 @@
     transition: 0.5s;
 }
 
-.social li a:hover{
+.social_nightMode li a:hover{
     transform: scale(0.5) translateY(-15px);
 }
 
+/* PHONE LANDSCAPE */
 @media (max-width: 991px){
     .flex-container,
     .flex-container header {
         padding: 40px;
     }
+ 
 
     .text1 h2{
         font-size: 3em;
     }
 
-    .text h3{
-        font-size: 2em;
+    .text1 h3, p{
+        /* font-size: 1em; */
+        display: none;
     }
+    .backgroundVideo{
+        display: none;
+    }
+
+   
+}
+
+@media (max-height: 400px){
+    .flex-container,
+    .flex-container header {
+        padding: 35px;
+
+    }  
+
+    .text1 h2{
+        font-size: 1em;
+    }
+
+    .text1 a{
+        font-size: 0.5em;
+    }
+
+
+    .text1 h3, p{
+        /* font-size: 1em; */
+        display: none;
+    }
+    .backgroundVideo{
+        display: none;
+    }
+
+   
 }
 
 
@@ -185,261 +235,3 @@
 }
 
 
-
-/*body{
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
-}
-
-
-ul{
-    list-style: none;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    gap: 15px;
-    font-size: 16px;
-}
-
-.button_main{
-    background-color: #1F2937;
-    color: white;
-    border: none;
-    padding: 2px;
-    text-decoration:underline;
-}
-
-button{
-    color: black;
-    padding: 2px;
-    border: none;
-    background-color: lightgrey;
-    text-decoration:underline;
-
-}
-
-.flex-container{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
-.item-1, .item-2, .item-3, .item-4, .item-5{
-    display: flex;
-    flex: 1;
-}
-
-.item-1, .item-4, .item-2{
-    flex-grow: 1.3;
-}
-
-.item-1{
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
-}
-
-.item-1 .contents-A{
-    flex: 1;
-    display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin: 0;
-   
-}
-
-.item-1 .contents-A .logo{
-    color: white;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.item-1 .contents-A .links{
-  
-    margin-left: auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
- 
-}
-
-.item-1 .contents-B{
-    flex: 3;
-    display: flex;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
-}
-
-.item-1 .contents-B .information{
-
-flex: 1;
-color:white;
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 5px;
-
-}
-
-.item-1 .contents-B .image{
-
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    flex-direction: row;
-
-}
-
-
-
-.item-1 .contents-B .image .box-1{
-    background-color: #1F2937;
-    flex:1;
-    
-}
-
-.item-1 .contents-B .image .box-2{
-    background-color: white;
-    flex:1;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    margin: 0px;
-   
-    padding-left: 15px;
-    border: 5px solid black;
- 
-}
-
-
-
-.item-2{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    
-}
-
-.item-2 .contents-A, .item-2 .contents-B{
-    text-align: center;
-    
-}
-
-
-.item-2 .contents-A .text{
-    font-size: 24px;
-    font-weight: bold;
-    
-}
-
-.item-2 .contents-B{
-    flex-grow: 2;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    align-items: center;
-    background-color: #1F2937;
-    padding: 10px;
-}
-
-.item-2 .contents-B .info{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.item-2 .contents-B .info .box{
-    border: 2px solid white;
-    padding: 40px;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-
-}
-
-.item-2 .contents-B .info .text{
-    color: white;
-}
-
-
-
-.item-3{
-    
-    background-color: lightgrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.item-3 .contents-A{
-    display: flex;
-}
-
-.item-3 .contents-B{
-    margin-left: 20%;
-    
-}
-
-
-.item-4{
-
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    background-color: #1F2937
-   
-
-    /*make this into two different boxes for footer
-    
-}
-
-
-.item-4 .contents-A{
-    flex-grow: 2;
-    display: flex;
-    margin: 0;
-    justify-content: center;
- 
-
-}
-
-.item-4 .contents-A .sub-A,.item-4 .contents-A .sub-B {
-    background-color: lightgrey;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  
-    padding-left: 100px;
-    padding-right: 100px;
-    color: black;
-    border: 2px solid black;
-   
-}
-
-.item-4 .contents-A .sub-B{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-
-.item-4 .contents-B{
-    background-color: white;
-    text-align: center;
-    color: black;
-    font-size: 10px;
-   
-} */
