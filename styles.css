@@ -180,18 +180,20 @@
 }
 
 /* PHONE PORTRAIT & LANDSCAPE*/
-@media (max-width: 991px){
-    *{
+@media (max-width: 550px){
+    body {
         padding-left: constant(safe-area-inset-left);
-        padding-right: cosntant(safe-area-inset-right);
+        padding-right: constant(safe-area-inset-right);
     }
 
     .flex-container,
-    .flex-container header{
+    .flex-container header {
         padding: 40px;
+        
     }
- 
 
+
+ 
     .text1 h2{
         font-size: 2em;
     }
