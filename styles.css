@@ -73,7 +73,7 @@
     
 }
 
-.flex-container .background { 
+.flex-container .backgroundPic { 
     position: absolute;
     top: 0;
     left: 0;
@@ -112,12 +112,20 @@
     z-index: 10;
 }
 
+.pins{
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    width: 12%;
 
-.mapPin{
-    z-index:10;
-    position: relative;
-    left: 100px;
 }
+
+#first{
+    filter: grayscale(90%);
+   
+
+} 
 
 
 .text1 h2{
@@ -139,7 +147,8 @@
     font-size: 1.1em;
     margin: 20px 0;
     font-weight: 400;
-    max-width: 700px;
+    /* max-width: 500px; */
+    max-width: 30%;
 
 }
 
@@ -187,7 +196,7 @@
 }
 
 /* PHONE PORTRAIT & LANDSCAPE*/
-@media (max-width: 700px){
+@media (max-width: 1000px){
     body {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -218,9 +227,16 @@
         display: none;
     }
 
-    .mapPin{
-        left: 70px;
+    .pins{
+        position: absolute;
+        left: 55%;
+        padding: 0;
+        margin: 0;
+        width: 12%;
+
+    
     }
+
 
    
 }
