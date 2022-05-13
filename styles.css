@@ -113,6 +113,13 @@
 }
 
 
+.mapPin{
+    z-index:10;
+    position: relative;
+    left: 100px;
+}
+
+
 .text1 h2{
     font-size: 5em;
     font-weight: 800;
@@ -180,7 +187,7 @@
 }
 
 /* PHONE PORTRAIT & LANDSCAPE*/
-@media (max-width: 550px){
+@media (max-width: 700px){
     body {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -189,6 +196,7 @@
     .flex-container,
     .flex-container header {
         padding: 40px;
+        
         
     }
 
@@ -208,6 +216,10 @@
     }
     .backgroundVideo{
         display: none;
+    }
+
+    .mapPin{
+        left: 70px;
     }
 
    
