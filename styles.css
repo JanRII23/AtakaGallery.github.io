@@ -181,10 +181,10 @@
 
 /* PHONE PORTRAIT */
 @media (max-width: 991px){
-    .flex-container,
+    /* .flex-container,
     .flex-container header {
         padding: 40px;
-    }
+    } */
  
 
     .text1 h2{
@@ -204,11 +204,11 @@
 
 /* PHONE lANDSCAPE*/
 @media (max-width: 500px){
-    .flex-container,
+    /* .flex-container,
     .flex-container header {
         padding: 40px;
 
-    }  
+    }   */
 
     .text1 h2{
         font-size: 1em;
