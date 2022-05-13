@@ -118,14 +118,14 @@
     padding: 0;
     margin: 0;
     width: 12%;
-
+    filter: grayscale(90%);
+    border: 2px solid black;
+    cursor:pointer;
 }
 
-#first{
-    filter: grayscale(90%);
-   
 
-} 
+
+
 
 
 .text1 h2{
@@ -152,7 +152,13 @@
 
 }
 
-.text1 a{
+.text1 .explore{
+    color: white;
+    text-decoration: none;
+}
+
+
+.text1 .contact{
     display: inline-block;
     font-size: 1em;
     background: white;
@@ -165,7 +171,7 @@
     transition: 0.2s;
 }
 
-.text1 a:hover{
+.text1 .contact:hover{
     letter-spacing: 6px;
 }
 
@@ -196,7 +202,7 @@
 }
 
 /* PHONE PORTRAIT & LANDSCAPE */
-@media (max-width: 1000px) and (orientation: portrait){
+@media (max-width: 1000px){
     body {
         padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
@@ -231,8 +237,6 @@
         padding: 0;
         margin: 0;
         width: 12%;
-
-    
     }
 
     .social_nightMode{
