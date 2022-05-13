@@ -248,17 +248,14 @@
 /* PHONE PORTRAIT */
 @media (max-width: 1000px) and (orientation: landscape){
     body {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-        padding-top: constant(safe-area-inset-top);
-        padding-bottom: constant(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 
     .flex-container,
     .flex-container header {
         padding: 40px;
-        
-        
+
     }
 
 
