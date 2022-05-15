@@ -22,6 +22,7 @@
     z-index: 2;
 }
 
+
 .mainTitle{
     text-transform: uppercase;
     cursor: pointer;
@@ -76,14 +77,6 @@
 
 
 
-.menu-toggle.active{
-    background: url('circularLogo.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    
-}
-
 .flex-container .backgroundPic { 
     position: absolute;
     top: 0;
@@ -130,14 +123,14 @@
     margin: 0; 
     width: 2%;
     filter: grayscale(90%);
-    /* border: 2px solid red; */
+    border: 2px solid red;
     cursor:pointer;
 }
 
 .flex-container .text1{
     max-width: 35%; 
     /* here it is for changing it */
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 
 
@@ -213,11 +206,40 @@
     transform: scale(0.5) translateY(-15px);
 }
 
+.menu {
+    position:absolute;
+    top: 0;
+    /* left: 500px; */
+    right: 50px;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;   
+}
+
+.menu li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* PHONE PORTRAIT & LANDSCAPE */
 @media (max-width: 1000px){
     body {
         padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
+        pointer-events:none;
     }
 
     .flex-container,
@@ -255,11 +277,10 @@
         left: 30px;
     }
    
+    .menu{
+        display: none;
+    }
 }
 
-
-.menu {
-    display:none;
-}
 
 
