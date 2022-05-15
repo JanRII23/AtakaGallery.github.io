@@ -55,15 +55,26 @@
 
 .menu-toggle{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 76px;
+    height: 76px;
     background: url('circularLogo.png'); 
     background-repeat: no-repeat;
     background-size: 70px;
     background-position: center;
     cursor: pointer;
+ 
+   
     
 }
+
+.menu-toggle:hover{
+   
+    border: 5.5px solid white;
+    border-radius: 50%;
+
+}
+
+
 
 .menu-toggle.active{
     background: url('circularLogo.png');
@@ -119,7 +130,7 @@
     margin: 0; 
     width: 2%;
     filter: grayscale(90%);
-    /* border: 2px solid black; */
+    /* border: 2px solid red; */
     cursor:pointer;
 }
 
