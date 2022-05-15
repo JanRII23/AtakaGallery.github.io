@@ -116,22 +116,52 @@
     z-index: 10;
 }
 
-.pins{
+
+.pinOne{
     position: absolute;
-    left: 50%;
     padding: 0;
+    left: 47%; 
     margin: 0; 
     width: 2%;
     filter: grayscale(90%);
-    border: 2px solid red;
-    cursor:pointer;
+    cursor:pointer; 
+}
+.pinTwo{
+    position: absolute;
+    padding: 0;
+    left: 65%; 
+    top: 38%;
+    margin: 0; 
+    width: 2%;
+    filter: grayscale(90%);
+    cursor:pointer; 
+}
+.pinThree{
+    position: absolute;
+    padding: 0;
+    left: 61%;
+    bottom: 25%;
+    margin: 0; 
+    width: 2%;
+    filter: grayscale(90%);
+    cursor:pointer; 
+}
+
+
+.pinOne.active, 
+.pinTwo.active,
+.pinThree.active{
+    filter: grayscale(40%);
+
 }
 
 .flex-container .text1{
     max-width: 35%; 
     /* here it is for changing it */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
+
+
 
 
 .text1 h2{
@@ -234,8 +264,8 @@
 }
 
 
-/* PHONE PORTRAIT & LANDSCAPE */
-@media (max-width: 1000px){
+/* PHONE PORTRAIT */
+@media (max-width: 600px){
     body {
         padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
@@ -265,13 +295,31 @@
         display: none;
     }
 
-    .pins{
+    .pinOne{
         position: absolute;
-        left: 55%;
+        left: 57%;
         padding: 0;
         margin: 0;
         width: 12%;
     }
+
+    .pinTwo{
+        position: absolute;
+        padding: 0;
+        left: 73%; 
+        top: 38%;
+        margin: 0; 
+        width: 12%;    }
+
+    .pinThree{
+        position: absolute;
+        padding: 0;
+        left: 63%;
+        bottom: 30%;
+        margin: 0; 
+        width: 12%;     
+    }
+    
 
     .social_nightMode{
         left: 30px;
@@ -280,6 +328,69 @@
     .menu{
         display: none;
     }
+}
+
+/* PHONE LANDSCAPE */
+@media (min-width: 600px) and (max-width: 1000px){
+    body {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+        pointer-events:none;
+    }
+
+    .flex-container,
+    .flex-container header {
+        padding: 40px;
+        
+        
+    }
+ 
+    .text1 h2{
+        font-size: 2em;
+    }
+
+    .text1 a{
+        font-size: 1em;
+    }
+
+    .text1 h3, p{
+        /* font-size: 1em; */
+        display: none;
+    }
+    .backgroundVideo{
+        display: none;
+    }
+
+    .pinOne{
+        position: absolute;
+        left: 43%;
+        padding: 0;
+        margin: 0;
+        width: 12%;
+    }
+
+    .pinTwo{
+        position: absolute;
+        padding: 0;
+        left: 68%; 
+        top: 42%;
+        margin: 0; 
+        width: 12%;    }
+
+    .pinThree{
+        position: absolute;
+        padding: 0;
+        left: 60%;
+        bottom: 27%;
+        margin: 0; 
+        width: 12%;     
+    }
+    
+
+    .social_nightMode{
+        left: 30px;
+    }
+  
 }
 
 
