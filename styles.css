@@ -31,16 +31,26 @@
 .mainTitle{
     text-transform: uppercase;
     cursor: pointer;
+    text-decoration: none;
+    color:white;
 }
 
 .mainTitle:hover{
     color:black;
 }
 
+
+
 .miscTitle{
     text-transform: uppercase;
     cursor: pointer;
+    text-decoration: none;
+    color:white;
 }
+.miscTitle:hover{
+    color:black;
+}
+
 
 .subContainer{
     display: flex;
@@ -48,10 +58,6 @@
     justify-content: space-between;
     width: 175px;
     
-}
-
-.miscTitle:hover{
-    color:black;
 }
 
 .flex-container header{
@@ -75,7 +81,7 @@
     background-repeat: no-repeat;
     background-size: 70px;
     background-position: center;
-    cursor: pointer;
+    cursor: auto;
  
 
 }
@@ -83,12 +89,6 @@
     opacity: .75;
 }
 
-.menu-toggle:hover{
-   
-    border: 6.6px solid black;
-    border-radius: 50%;
-
-}
 
 
 /* .flex-container .backgroundPic { 
@@ -146,8 +146,13 @@
 }
 
 .backgroundVideo:hover{
-    transition: 0.6s;
-    transform: scale(1.05);
+    transition: 0.65s;
+    /* transform: scale(1.05); */
+    transform: scale(1.35);
+    cursor: auto;
+    bottom: 55px;
+    right: 85px;
+    opacity: .5;
 }
 
 
@@ -203,6 +208,8 @@
 
 }
 
+
+
 .flex-container .text1{
     max-width: 35%; 
     /* here it is for changing it */
@@ -240,7 +247,14 @@
 .text1 .explore{
     color: white;
     text-decoration: none;
+   
 }
+
+.explore:hover{
+    color:black;
+    letter-spacing: 8px;
+}
+
 
 .explore.active{
     color:lightgrey;
@@ -390,6 +404,7 @@
         margin: 0; 
         width: 12%;     
     }
+
 
     .pinOne:hover,
     .pinTwo:hover,

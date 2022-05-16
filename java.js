@@ -4,6 +4,7 @@ const pinTwo_div = document.querySelector(".pinTwo");
 const pinThree_div = document.querySelector(".pinThree");
 
 
+
 const nightMode_div = document.querySelector(".backgroundPic");
 const nightModeLetters = document.querySelector(".flex-container");
 const exploreLetters = document.querySelector(".explore");
@@ -16,20 +17,20 @@ const nightMode_li = document.getElementById("night");
 
 function main(){
 
-   pinOne_div.addEventListener('click', () => {
-       pinOne_div.classList.toggle('active');
-   })
+//    pinOne_div.addEventListener('click', () => {
+//        pinOne_div.classList.toggle('active');
+       
+//    })
 
 
-   pinTwo_div.addEventListener('click', () => {
-        pinTwo_div.classList.toggle('active');
-    })
+//    pinTwo_div.addEventListener('click', () => {
+//         pinTwo_div.classList.toggle('active');
+//     })
  
 
-    pinThree_div.addEventListener('click', () => {
-        console.log("Hello");
-        pinThree_div.classList.toggle('active');
-    })
+//     pinThree_div.addEventListener('click', () => {
+//         pinThree_div.classList.toggle('active');
+//     })
 
     nightMode_li.addEventListener('click', () =>{
         nightMode_div.classList.toggle('active');
