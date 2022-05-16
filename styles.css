@@ -20,8 +20,12 @@
     background: black;
     color: white;
     z-index: 2;
-
 }
+
+.flex-container.active{
+    color: lightgrey;
+}
+
 
 
 .mainTitle{
@@ -73,8 +77,10 @@
     background-position: center;
     cursor: pointer;
  
-   
-    
+
+}
+.menu-toggle.active{
+    opacity: .75;
 }
 
 .menu-toggle:hover{
@@ -93,7 +99,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.6;
-    old version
+    old style
 } */
 
 
@@ -107,6 +113,13 @@
     background-position:center;
     opacity: 0.6;
     background-image: url(background_mainOutside.png);
+    
+}
+
+.flex-container .backgroundPic.active{ 
+
+    opacity: .35;
+  
     
 }
 
@@ -207,6 +220,8 @@
 
 }
 
+
+
 .text1 h3{
     font-size: 3em;
     font-weight: 700;
@@ -227,6 +242,10 @@
     text-decoration: none;
 }
 
+.explore.active{
+    color:lightgrey;
+}
+
 
 .text1 .contact{
     display: inline-block;
@@ -239,6 +258,11 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.2s;
+}
+
+.contact.active{
+    color:white;
+    background:darkgrey;;
 }
 
 .text1 .contact:hover{
@@ -296,6 +320,10 @@
 .menu ul li a{
     text-decoration: none;
     color: white;
+}
+
+.menu.active ul li a{
+    color: lightgrey;
 }
 
 .menu ul li a:hover{
