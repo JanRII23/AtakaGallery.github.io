@@ -119,9 +119,20 @@
 .flex-container .backgroundPic.active{ 
 
     opacity: .35;
-  
+
     
 }
+/* remember to disable this for for certain lengths and find*/
+.spotlight.active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, transparent 0px, rgba(0, 0, 0, 0.45) 100px);
+    
+}
+
 
 .backgroundOverlay{
     position: absolute;
