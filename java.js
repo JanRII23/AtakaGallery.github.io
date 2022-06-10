@@ -12,23 +12,24 @@ const menuLetters = document.querySelector(".menu");
 const contactButton = document.querySelector(".contact");
 const logoNight = document.querySelector(".menu-toggle");
 
+const bodySelect = document.querySelector("body");
 let spotLight_div = document.querySelector(".spotlight");
+let click = false;
 
 const nightMode_li = document.getElementById("night");
 
 
-function moveSpotlight(){ //check to see if spotlights goes away when switching off night also what is happening is that im querying .spotlight not spotlight active"
-    
-    let spotLightActive = document.querySelector(".spotlight.active");
+function moveSpotlight(){ 
 
-    window.addEventListener('mousemove', function(e){
+    window.addEventListener('mousemove', e => {
         let percentageX = e.pageX / window.innerWidth * 100;
         let percentageY = e.pageY / window.innerHeight * 100;
 
-        spotLightActive.style.backgroundIMage = `radial-gradient(circle at ${percentageX}% ${percentageY}%, transparent 80px, rgba(0,0,0,0.45) 140px`
-        
+        spotLight_div.style.backgroundImage = `radial-gradient(circle at ${percentageX}% ${percentageY}%, transparent 80px, rgba(0,0,0,0.15) 110px`
+      
+
+      
     })
-    console.log("Hello");
 
     
 }
@@ -58,13 +59,15 @@ function main(){
         menuLetters.classList.toggle('active');
         exploreLetters.classList.toggle('active');
         spotLight_div.classList.toggle('active');
+        //click = !click;
     })
 
- 
+   moveSpotlight();
 
 }
 
 main();
 
-moveSpotlight();
 
+
+//new implementation is to have the spotlight stop when clicking the body using the click = !click trick if user ever decides not to have the spotlight stay

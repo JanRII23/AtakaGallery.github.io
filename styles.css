@@ -122,16 +122,18 @@
 
     
 }
-/* remember to disable this for for certain lengths and find*/
+
 .spotlight.active{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(circle, transparent 0px, rgba(0, 0, 0, 0.45) 100px);
+    background-image: radial-gradient(circle, transparent 0px, rgba(0, 0, 0, 0.15) 0px);
     
 }
+
+
 
 
 .backgroundOverlay{
@@ -370,6 +372,10 @@
         
         
     }
+
+    .spotlight.active{
+        display: none;
+    }
  
     .text1 h2{
         font-size: 2em;
@@ -448,6 +454,11 @@
         
         
     }
+
+    .spotlight.active{
+        display: none;
+    }
+ 
  
     .text1 h2{
         font-size: 2em;
