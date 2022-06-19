@@ -407,14 +407,18 @@ body .container section{
 /* PHONE PORTRAIT */
 @media (max-width: 600px){
     body {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
+        /* padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right); */
+
+
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
         
     }
 
     body .container{
         overflow-y: scroll;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
     }
     
     
@@ -506,14 +510,17 @@ body .container section{
 /* PHONE LANDSCAPE */
 @media (min-width: 600px) and (max-width: 1000px){
     body {
-        padding-left: env(safe-area-inset-left);
+        /* padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
-        
+         */
+
+         padding-left: min(0vmin, env(safe-area-inset-left));
+         padding-right: min(0vmin, env(safe-area-inset-right));
     }
 
     body .container{
         overflow-y: scroll;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
     }
     
     
