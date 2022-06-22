@@ -10,13 +10,20 @@
     <link rel = "shortcut icon" type="image/jpg" href = "./circularLogo.png"/>
     <link rel="stylesheet" href="./styles.css" >
     <script src = "java.js" defer></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script> //used for loading in different sub html files
+       $(document).ready(function(){
+           $("#includeContentOne").load("./contactForm/contactForm.html");
+       });
+    </script>
 </head>
 
 <body>
 
     <div class="container">
 
-        <section class="pageOne">
+    <section class="pageOne">
 
         <div class="flex-container">
             
@@ -103,10 +110,9 @@
 
     </section>
 
-    <section class="pageTwo">
-
-        <h1>2nd Page</h1>
-
+    
+    <section id = "includeContentOne" class="pageTwo">
+        <!-- This is jQueryed -->
     </section>
 
     <section class="pageThree">

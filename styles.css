@@ -8,7 +8,7 @@
     font-family: 'Lacquer', cursive;
 }
 
-/* re-review the scroll snap effect and how it was solved. Also make sure to link clickable elements to part of the page especially contact. Also add the red tool bar at the top that labels scroll num */
+/* re-review the scroll snap effect and how it was solved. Also make sure to link clickable elements to part of the page especially contact. Also add the red tool bar at the top that labels scroll num, experiment with jquery other javascript files within sub htmls*/
 
 body .container{
     overflow-y: scroll;

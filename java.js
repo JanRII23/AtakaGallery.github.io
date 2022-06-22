@@ -45,6 +45,8 @@ function nightMode(){
     })
 }
 
+
+
 function main(){
 
 //    pinOne_div.addEventListener('click', () => {
@@ -69,6 +71,7 @@ function main(){
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click;
     })
+
 
 }
 
