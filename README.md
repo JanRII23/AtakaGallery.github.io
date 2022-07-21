@@ -1,3 +1,3 @@
 # atakagallery.github.io
 
-This is a Odin Project attempt after finishing HTML and CSS Basics
+This is a portfolio website refer the the Documentation.pdf for further information
