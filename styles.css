@@ -308,6 +308,10 @@ body .container section{
     color:lightgrey;
 }
 
+.explore.active:hover{
+    color: black;
+}
+
 
 .text1 .contact{
     display: inline-block;
@@ -403,10 +407,10 @@ body .container section{
     
 }
 
-.pageTwo{
+/* .pageTwo{
     background: rgb(36, 164, 138);
     
-}
+} */
 
 .pageThree{
     background: rgb(211, 79,79);
