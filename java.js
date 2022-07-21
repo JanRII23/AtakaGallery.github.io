@@ -1,3 +1,5 @@
+let click = false;
+
 const nightMode_SpotLightModule = (function(){
     'use strict';
     const nightMode_div = document.querySelector(".backgroundPic");
@@ -8,8 +10,7 @@ const nightMode_SpotLightModule = (function(){
     const logoNight = document.querySelector(".menu-toggle");
 
     let spotLight_div = document.querySelector(".spotlight");
-    let click = false;
-
+   
     const nightMode_li = document.getElementById("night");
 
     function moveSpotlight(){ 

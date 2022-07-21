@@ -8,7 +8,43 @@
     font-family: 'Lacquer', cursive;
 }
 
-.pageTwo{
-    
+.flex-container2{
+    position: absolute;
+    right: 0;
+    width:100%;
+    min-height: 100vh;
+    padding: 100px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    background: rgb(145,145,145);
+    color: white;
+    z-index: 2;
+}
+
+
+/* .flex-container2.active{
+    color: lightgrey;
+}
+
+.flex-container2 .backgroundPic2 { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-position:center;
+    opacity: .67;
+    background-image: url(../background_mainOutside.png);
     
 }
+
+.flex-container2 .backgroundPic2.active{ 
+
+    opacity: .35;
+
+    
+} */
+
+

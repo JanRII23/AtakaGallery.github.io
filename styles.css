@@ -14,7 +14,10 @@
     width: 11px;
 }
 .container::-webkit-scrollbar-track{
-    background: light grey;
+    /* background: light grey; */
+    background: rgb(137,137,137);
+ 
+    opacity: .90;
 }
 
 .container::-webkit-scrollbar-thumb{
@@ -397,7 +400,6 @@ body .container section{
 }
 
 
-.pageTwo,
 .pageThree,
 .pageFour{
     color:white;
@@ -413,11 +415,11 @@ body .container section{
 } */
 
 .pageThree{
-    background: rgb(211, 79,79);
+    background: rgb(155, 155,155);
 }
 
 .pageFour{
-    background: lightsalmon;
+    background: rgb(165, 165,165);
 }
 
 
