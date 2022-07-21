@@ -80,3 +80,5 @@ main();
 
 
 //new implementation is to have the spotlight stop when clicking the body using the click = !click trick if user ever decides not to have the spotlight stay
+
+//need to make the js modular and encapsulated
