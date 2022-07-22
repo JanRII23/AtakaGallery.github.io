@@ -8,12 +8,6 @@
     font-family: 'Lacquer', cursive;
 }
 
-body{
-    color: #000;
-    background-color: #f4f4f4;
-    transition: background-color 1s ease;
-}
-
 .flex-container2{
     position: absolute;
     right: 0;
@@ -23,9 +17,9 @@ body{
     display:flex;
     justify-content:flex-start;
     align-items: center;
-    background: rgb(145,145,145);
+    /* background: rgb(145,145,145); */
    
-    color: white;
+    color: black;
     z-index: 2;
 }
 
