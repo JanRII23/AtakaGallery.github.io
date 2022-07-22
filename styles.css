@@ -28,8 +28,13 @@
 
 body .container{
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     height: 100vh;
+}
+
+body{
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
 }
 
 
