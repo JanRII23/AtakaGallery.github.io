@@ -1,3 +1,18 @@
+const scrollEvent = () => {
+    const main = document.querySelector(".container");
+    const section2 = document.querySelector("#includeContentOne");
+
+    if (main.scrollTop > 100){
+        section2.style.backgroundColor = "red";
+    }else{
+        section2.style.backgroundColor = "blue";
+    }
+
+    main.addEventListener('scroll', scrollEvent);
+}
+
+
+
 let click = false;
 
 const nightMode_SpotLightModule = (function(){
@@ -58,6 +73,7 @@ function main(){
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
+       
     })
 
 

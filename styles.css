@@ -25,18 +25,22 @@
     border: 3px solid white;
 }
 
+body{
+    transition: background-color .2s ease;
+}
+
 body .container{
     overflow-y: scroll;
+    scroll-behavior: smooth;
     scroll-snap-type: y proximity;
     height: 100vh;
+ 
 }
 
 /* this is where the transition ease to next slide starts */
-body{ 
-    -webkit-transition: background-color 1s ease;
-    transition: background-color 1s ease;
-    background: #f4f4f4;
-}
+/* body{ 
+    transition: background 1s ease;
+} */
 
 
 body .container section{
@@ -434,17 +438,6 @@ body .container section{
 
 } */
 
-.color-green{
-    background-color: green;
-}
-
-.color-blue{
-    background-color: blue;
-}
-
-.color-red{
-    background-color: red;
-}
 
 
 

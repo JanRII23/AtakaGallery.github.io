@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Six+Caps&display=swap');
 
 
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lacquer', cursive;
-}
+} */
 
-.flex-container2{
+/* .flex-container2{
     position: absolute;
     right: 0;
     width:100%;
@@ -17,7 +17,7 @@
     display:flex;
     justify-content:flex-start;
     align-items: center;
-    /* background: rgb(145,145,145); */
+    background: rgb(145,145,145);
    
     color: black;
     z-index: 2;
@@ -44,7 +44,7 @@
     opacity: .35;
 
     
-}
+} */
 
 
 
