@@ -8,7 +8,7 @@
     font-family: 'Lacquer', cursive;
 } */
 
-/* .flex-container2{
+.flex-container2{
     position: absolute;
     right: 0;
     width:100%;
@@ -17,14 +17,15 @@
     display:flex;
     justify-content:flex-start;
     align-items: center;
-    background: rgb(145,145,145);
-   
     color: black;
-    z-index: 2;
+    background: rgb(145,145,145);
+    transition: 1.5s;
+    /* z-index: 2; */
 }
 
-.flex-container2.active{
-    color: lightgrey;
+.flex-container2:hover{
+    background: black;
+
 }
 
 .flex-container2 .backgroundPic2 { 
@@ -35,13 +36,25 @@
     height: 100vh;
     object-fit: cover;
     background-position:center; 
-  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.flex-container2 .backgroundPic2.active{ 
+
+
+
+/* .flex-container2.active{
+    color: lightgrey;
+    this is for night mode later
+} */
+
+/* .flex-container2 .backgroundPic2.active{ 
 
     opacity: .35;
+    this is for night mode later
 
     
 } */

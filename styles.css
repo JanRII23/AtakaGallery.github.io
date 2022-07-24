@@ -8,30 +8,32 @@
     font-family: 'Lacquer', cursive;
 }
 
+/* consider having a scroll bar or not later */
 
 .container::-webkit-scrollbar{
-    width: 11px;
+    /* width: 6px; */ 
+    width: 0px;
 }
 .container::-webkit-scrollbar-track{
-    /* background: light grey; */
-    background: rgb(137,137,137);
- 
-    opacity: .90;
+
+    /* background: rgb(137,137,137); */
+    background: transparent;
+    /* opacity: .90; */
 }
 
-.container::-webkit-scrollbar-thumb{
+/* .container::-webkit-scrollbar-thumb{
     background-color: grey;
     border-radius: 12px;
-    border: 3px solid white;
-}
+    border: 2px solid white;
+} */
 
-body{
+html{
     scroll-behavior: smooth;
 }
 
 body .container{
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     height: 100vh;
 }
 
@@ -411,11 +413,12 @@ body .container section{
 }
 
 
-.panel{
-    color:black;
+#sect3,
+#sect4{
     display:flex;
     justify-content: center;
     align-items: center;
+
     
 }
 

@@ -1,26 +1,26 @@
-const main = document.querySelector(".container");
-const scrollEvent = () => {
+// const main = document.querySelector(".container");
+// const scrollEvent = () => {
     
-    const section2 = document.querySelector("#sect2");
-    const section3 = document.querySelector("#sect3");
+//     const section2 = document.querySelector("#sect2");
+//     const section3 = document.querySelector("#sect3");
 
-    if (main.scrollTop > 500){
-        section2.style.backgroundColor = "red";
+//     if (main.scrollTop > 500){
+//         section2.style.backgroundColor = "red";
         
-    }
-    else{
-        section2.style.backgroundColor = "black";
+//     }
+//     else{
+//         section2.style.backgroundColor = "black";
 
-    }
+//     }
 
-    if (main.scrollTop > window.innerHeight / 2){
-        section3.style.backgroundColor = "blue";
-    }else{
-        section3.style.backgroundColor = "purple";
-    }
-}
+//     if (main.scrollTop > window.innerHeight / 2){
+//         section3.style.backgroundColor = "blue";
+//     }else{
+//         section3.style.backgroundColor = "purple";
+//     }
+// } remember that main keyword already exists!!
 
-main.addEventListener('scroll', scrollEvent);
+// main.addEventListener('scroll', scrollEvent);
 
 
 
@@ -77,7 +77,7 @@ const nightMode_SpotLightModule = (function(){
     
 }) ();
 
-function main1(){
+function main(){
 
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
@@ -93,7 +93,7 @@ function main1(){
 
 }
  //test main1
-main1();
+main();
 
 
 //for the pins later
