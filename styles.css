@@ -26,16 +26,16 @@
 }
 
 body{
-    transition: background-color .2s ease;
+    scroll-behavior: smooth;
 }
 
 body .container{
     overflow-y: scroll;
-    scroll-behavior: smooth;
     scroll-snap-type: y proximity;
     height: 100vh;
- 
 }
+
+
 
 /* this is where the transition ease to next slide starts */
 /* body{ 
@@ -53,6 +53,7 @@ body .container section{
     position: relative;
 
     scroll-snap-align: center;
+   
 }
 
 
@@ -411,12 +412,13 @@ body .container section{
 
 
 .panel{
-    color:white;
+    color:black;
     display:flex;
     justify-content: center;
     align-items: center;
     
 }
+
 
 /* .pageTwo{
     background: rgb(36, 164, 138);

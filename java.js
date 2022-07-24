@@ -1,15 +1,26 @@
+const main = document.querySelector(".container");
 const scrollEvent = () => {
-    const main = document.querySelector(".container");
-    const section2 = document.querySelector("#includeContentOne");
+    
+    const section2 = document.querySelector("#sect2");
+    const section3 = document.querySelector("#sect3");
 
-    if (main.scrollTop > 100){
+    if (main.scrollTop > 500){
         section2.style.backgroundColor = "red";
-    }else{
-        section2.style.backgroundColor = "blue";
+        
+    }
+    else{
+        section2.style.backgroundColor = "black";
+
     }
 
-    main.addEventListener('scroll', scrollEvent);
+    if (main.scrollTop > window.innerHeight / 2){
+        section3.style.backgroundColor = "blue";
+    }else{
+        section3.style.backgroundColor = "purple";
+    }
 }
+
+main.addEventListener('scroll', scrollEvent);
 
 
 
@@ -66,7 +77,7 @@ const nightMode_SpotLightModule = (function(){
     
 }) ();
 
-function main(){
+function main1(){
 
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
@@ -77,9 +88,12 @@ function main(){
     })
 
 
-}
+    
 
-main();
+
+}
+ //test main1
+main1();
 
 
 //for the pins later

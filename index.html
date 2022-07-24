@@ -16,7 +16,7 @@
 
     <script> //used for loading in different sub html files
        $(document).ready(function(){
-           $("#includeContentOne").load("./unityProject/unityProject.html");
+           $("#sect2").load("./unityProject/unityProject.html");
           
        });
     </script>
@@ -24,9 +24,9 @@
 
 <body>
 
-<div class="container">
+<main class="container" dir = "ltr">
 
-    <section class="panel" data-color = "white">
+    <section id = "sect1" class = "panel">
 
         <div class="flex-container">
             
@@ -114,28 +114,30 @@
     </section>
 
     
-    <section id = "includeContentOne" class="panel" data-color="green">
+    <section id = "sect2" class="panel" >
         <!--jQueryed in unity project folder-->
     </section>
 
-    <section class="panel" data-color="purple">
+    <section id = "sect3" class="panel" >
          <!-- This is jQueryed -->
         <h1>3rd Page</h1>
 
     </section>
 
-    <section class="panel" data-color="red">
+    <section id = "sect4" class="panel" >
          <!-- This is jQueryed -->
         <h1>4th Page</h1>
 
     </section>
 
-</div>
+</main>
 
 <!-- added the class panels names changes and data-background -->
 <!-- figure out the ease transition to next Page
 is the scroll snap effect messing up the css? -->
-<!-- https://stackoverflow.com/questions/61761439/how-can-i-get-css-scroll-snap-to-work-with-js-scroll-event-listener -->
+
+<!-- 
+possible test tomorrow is that if i scroll down and maintain the mouse on the page instead of the scrollbard I could've technically add a hover background effect and plus it would have ease transition built in too and take off scrollbar to remove the possibility of even using it!!! I could possible incorporate scroll event for something else -->
 
 
 </body>
