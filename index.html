@@ -13,13 +13,14 @@
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./unityProject/unityProjectStyles.css">
     <script src="./unityProject/unityProjectScript.js" defer></script>
-
+<!-- 
     <script> //used for loading in different sub html files
        $(document).ready(function(){
            $("#sect2").load("./unityProject/unityProject.html");
           
        });
-    </script>
+    </script> -->
+
 </head>
 
 <body>
@@ -116,6 +117,27 @@
     
     <section id = "sect2" class="panel" >
         <!--jQueryed in unity project folder-->
+          <!-- have effects for !hover/ scroll down and hover -->
+
+          <div id="flex-container2">
+
+            <!-- <div class="title2"><h1>The Deliverer</h1></div>
+            
+            <div class="backgroundPic2" >
+
+            </div> -->
+
+            <div class="flex-container2First">
+
+            </div>
+
+            <div class="flex-container2Second">
+
+            </div>
+            
+        </div>
+
+        <!-- the problem now is that the js file is still referencing the index.html. How do i make sure it doesn't use that as a reference but instead to this html -->
     </section>
 
     <section id = "sect3" class="panel" >
@@ -138,7 +160,9 @@ is the scroll snap effect messing up the css? -->
 <!-- 
 possible test tomorrow is that if i scroll down and maintain the mouse on the page instead of the scrollbard I could've technically add a hover background effect and plus it would have ease transition built in too and take off scrollbar to remove the possibility of even using it!!! I could possible incorporate scroll event for something else -->
 
-<!-- because of the website being different I need to make sure that the @media is being adjusted accordignly with the scroll-behavior, background-hover,  -->
+<!-- because of the website being different I need to make sure that the @media is being adjusted accordignly with the scroll-behavior, background-hover,   -->
+
+<!-- for tomorrow mainly work on the the referencing of different html and javascript and css to be independent of each other using jquery -->
 
 
 </body>

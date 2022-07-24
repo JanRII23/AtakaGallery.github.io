@@ -10,27 +10,42 @@
 
 .flex-container2{
     position: absolute;
-    right: 0;
+    /* right: 0; */
     width:100%;
     min-height: 100vh;
-    padding: 100px;
+    /* padding: 100px; */
     display:flex;
-    justify-content:center;
-    align-items: center;
+    /* justify-content:center;
+    align-items: center; */
     color: white;
     background: rgb(145,145,145);
     transition: 2s;
     /* z-index: 2; */
 }
 
+/* figure out how to activate both on hover flex1 & 2 at same time using javascript */
 
-
-.flex-container2:hover{
-    background: black;
-
+.flex-container2First{
+    border: 2px solid red;
+    width: 50%;
+    height: 100vh;
 }
 
-.flex-container2 .backgroundPic2 { 
+.flex-container2First.active{
+    background: black;
+}
+
+.flex-container2Second{
+    border: 2px solid green;
+    width: 50%;
+    height: 100vh;
+}
+
+.flex-container2Second.active{
+    background: black;
+}
+
+/* .flex-container2 .backgroundPic2 { 
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +54,7 @@
     object-fit: cover;
     background-position:center; 
     
-}
+} */
 
 
 
