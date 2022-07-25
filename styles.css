@@ -33,7 +33,7 @@ html{
 
 body .container{
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     height: 100vh;
 }
 

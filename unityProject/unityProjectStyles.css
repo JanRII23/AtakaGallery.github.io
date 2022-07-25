@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Six+Caps&display=swap');
 
+/* this to keep in mind that once my suit is fully built just combine this with the other style.css */
+
 
 /* *{
     box-sizing: border-box;
@@ -8,13 +10,14 @@
     font-family: 'Lacquer', cursive;
 } */
 
-.flex-container2{
+#flex-container2{
     position: absolute;
     /* right: 0; */
     width:100%;
     min-height: 100vh;
     /* padding: 100px; */
     display:flex;
+    /* flex-direction: row; */
     /* justify-content:center;
     align-items: center; */
     color: white;
