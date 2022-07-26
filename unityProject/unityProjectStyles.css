@@ -21,7 +21,6 @@
     /* background: rgb(145,145,145); */
     background: white;
     border: 20px solid rgb(145,145,145);
-    /* transition: 1s; */
     /* z-index: 2; */
 }
 
@@ -36,6 +35,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* opacity: .8; */
+
 }
 
 .stopVideo{
@@ -75,24 +76,47 @@
 /* figure out how to activate both on hover flex1 & 2 at same time using javascript */
 
 .flex-container2First{
-    border: 2px solid red;
-    width: 50%;
-    height: 96vh;
+    display: none;
+    
 }
 
 .flex-container2First.active{
-    background: black;
+    /* background: black; */
+    border: 2px solid red;
+    width: 50%;
+    height: 96vh;
+    display: flex;
+    background: rgb(145,145,145);
+}
+
+.flex-container2First.night{
+    /* background: black; */
+    background-color: rgb(67, 67, 67);;
 }
 
 .flex-container2Second{
-    border: 2px solid green;
-    width: 50%;
-    height: 96vh;
+   display: none;
+  
 }
 
 .flex-container2Second.active{
-    background: black;
+    /* background: black; */
+    border: 2px solid green;
+    width: 50%;
+    height: 96vh;
+    display: flex;
+    background:rgb(145,145,145);
 }
+
+.flex-container2Second.night{
+    /* background: black; */
+    background-color: rgb(67, 67, 67);;
+
+}
+
+
+
+
 
 /* .flex-container2 .backgroundPic2 { 
     position: absolute;

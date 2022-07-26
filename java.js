@@ -57,51 +57,34 @@
 
 let click = false;
 
-// const removeMp4_Module = (function(){
-
-//     'use strict';
-//     const mediaQuery = window.matchMedia('(max-width: 1000px)');
-
-//     // set to min-width
-
-//     function dontLoad(){
-//         if (mediaQuery.matches){
-//             document.querySelector(".backgroundVideo").remove();
-//         }
-//     };
-
-//     return{
-//         dontLoadPublic: function(){
-//             dontLoad();
-//         }
-//     }
-
-
-// }) ();
-
 const removeMp4_Module = (function(){
 
     'use strict';
     const mediaQuery = window.matchMedia('(min-width: 1001px)');
-    const backgroundVideo_tag = document.querySelector(".backgroundVideo");
+    const backgroundVideoLanding_tag = document.querySelector(".backgroundVideo");
+    const unityVideoLogo_tag = document.querySelector(".unityVideo_real");
 
     
     
     
 
-    function dontLoad(){
+    function Load(){
         if (mediaQuery.matches){
-            backgroundVideo_tag.src = './images/backgroundsmaller_video.mp4';
-            backgroundVideo_tag.muted = true;
-            backgroundVideo_tag.loop = true;
-            backgroundVideo_tag.autoplay = true;
+            backgroundVideoLanding_tag.src = './images/backgroundsmaller_video.mp4';
+            backgroundVideoLanding_tag.muted = true;
+            backgroundVideoLanding_tag.loop = true;
+            backgroundVideoLanding_tag.autoplay = true;
+            unityVideoLogo_tag.src = './unityProject/theDelivererAssets/Unity2.0.mp4';
+            unityVideoLogo_tag.muted = true;
+            unityVideoLogo_tag.loop = true;
+            unityVideoLogo_tag.autoplay = true;
             // Note that if I were to remove the video tag instead it still get loaded by webpage
         }
     };
 
     return{
-        dontLoadPublic: function(){
-            dontLoad();
+        LoadPublic: function(){
+            Load();
         }
     }
 
@@ -114,12 +97,17 @@ const unityPlay_Module = (function(){
 
     const unityVideo_div = document.querySelector(".unityVideo");
     const stopVideo_button = document.querySelector(".stopVideo");
+    const flexContainer2First_div = document.querySelector(".flex-container2First");
+    const flexContainer2Second_div = document.querySelector(".flex-container2Second");
+
 
     // good thing about this is that once that user views it doesnt play animation
 
     function stopVideo(){
         stopVideo_button.addEventListener('click', () => {
             unityVideo_div.classList.toggle('stopPlay');
+            flexContainer2First_div.classList.toggle('active');
+            flexContainer2Second_div.classList.toggle('active');
         })
 
     };
@@ -148,6 +136,8 @@ const nightMode_SpotLightModule = (function(){
     //unity page
     const flex_container2_id = document.getElementById("flex-container2");
     const unityVideo_div = document.querySelector(".unityVideo");
+    const flexContainer2First_div = document.querySelector(".flex-container2First");
+    const flexContainer2Second_div = document.querySelector(".flex-container2Second");
 
     function moveSpotlight(){ 
     
@@ -174,6 +164,8 @@ const nightMode_SpotLightModule = (function(){
             spotLight_div.classList.toggle('active');
             unityVideo_div.classList.toggle('active');
             flex_container2_id.classList.toggle('active');
+            flexContainer2First_div.classList.toggle('night');
+            flexContainer2Second_div.classList.toggle('night');
             
         })
     };
@@ -194,7 +186,7 @@ function main(){
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
     unityPlay_Module.stopVideoPublic();
-    removeMp4_Module.dontLoadPublic();
+    removeMp4_Module.LoadPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
