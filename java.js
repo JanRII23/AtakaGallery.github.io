@@ -57,6 +57,26 @@
 
 let click = false;
 
+const removeMp4_Module = (function(){
+
+    'use strict';
+    const mediaQuery = window.matchMedia('(max-width: 1000px)');
+
+    function dontLoad(){
+        if (mediaQuery.matches){
+            document.querySelector(".backgroundVideo").remove();
+        }
+    };
+
+    return{
+        dontLoadPublic: function(){
+            dontLoad();
+        }
+    }
+
+
+}) ();
+
 const unityPlay_Module = (function(){
 
     'use strict';
@@ -143,6 +163,7 @@ function main(){
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
     unityPlay_Module.stopVideoPublic();
+    removeMp4_Module.dontLoadPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
