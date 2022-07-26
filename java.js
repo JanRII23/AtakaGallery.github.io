@@ -57,14 +57,45 @@
 
 let click = false;
 
+// const removeMp4_Module = (function(){
+
+//     'use strict';
+//     const mediaQuery = window.matchMedia('(max-width: 1000px)');
+
+//     // set to min-width
+
+//     function dontLoad(){
+//         if (mediaQuery.matches){
+//             document.querySelector(".backgroundVideo").remove();
+//         }
+//     };
+
+//     return{
+//         dontLoadPublic: function(){
+//             dontLoad();
+//         }
+//     }
+
+
+// }) ();
+
 const removeMp4_Module = (function(){
 
     'use strict';
-    const mediaQuery = window.matchMedia('(max-width: 1000px)');
+    const mediaQuery = window.matchMedia('(min-width: 1001px)');
+    const backgroundVideo_tag = document.querySelector(".backgroundVideo");
+
+    
+    
+    
 
     function dontLoad(){
         if (mediaQuery.matches){
-            document.querySelector(".backgroundVideo").remove();
+            backgroundVideo_tag.src = './images/backgroundsmaller_video.mp4';
+            backgroundVideo_tag.muted = true;
+            backgroundVideo_tag.loop = true;
+            backgroundVideo_tag.autoplay = true;
+            // Note that if I were to remove the video tag instead it still get loaded by webpage
         }
     };
 
