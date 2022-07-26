@@ -70,6 +70,7 @@ body .container section{
     background: black;
     color: white;
     z-index: 2;
+
 }
 
 .flex-container.active{

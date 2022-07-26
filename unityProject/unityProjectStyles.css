@@ -12,19 +12,65 @@
 
 #flex-container2{
     position: absolute;
-    /* right: 0; */
     width:100%;
     min-height: 100vh;
-    /* padding: 100px; */
     display:flex;
-    /* flex-direction: row; */
-    /* justify-content:center;
-    align-items: center; */
+    justify-content:center;
+    align-items: center;
     color: white;
-    background: rgb(145,145,145);
-    transition: 2s;
+    /* background: rgb(145,145,145); */
+    background: white;
+    border: 20px solid rgb(145,145,145);
+    /* transition: 1s; */
     /* z-index: 2; */
 }
+
+#flex-container2.active{
+    background: black;
+    border: 20px solid rgb(67, 67, 67);
+}
+
+.unityVideo{
+    filter: invert(1);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stopVideo{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+   
+}
+.stopVideo:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.unityVideo.stopPlay{
+    display: none;
+}
+
+.unityVideo.active{
+    filter: invert(0);
+}
+
+
+/* #flex-container2:hover{
+    background-video
+   
+} */
+
 
 /* figure out how to activate both on hover flex1 & 2 at same time using javascript */
 

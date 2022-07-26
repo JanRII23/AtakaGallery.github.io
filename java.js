@@ -23,8 +23,63 @@
 // main.addEventListener('scroll', scrollEvent);
 
 
+// const backgroundModuleMain = (function(){
+//     'use strict'
+//     const flex_container2First_div = document.querySelector(".flex-container2First");
+//     const flex_container2Second_div = document.querySelector(".flex-container2Second");
+    
+
+//     function backgroundChange(){
+//         window.addEventListener('click', () =>{
+//             flex_container2First_div.classList.toggle('active');
+            
+//             console.log('money');
+//         })
+//     };
+
+//     return{
+//         backgroundChangePublic: function(){
+//             backgroundChange();
+            
+//         }
+//     };
+
+// }) ();
+
+
+// function main1(){
+//     // backgroundModuleMain.backgroundChangePublic();
+//     const flex_container2First_div = document.querySelector(".flex-container2First");
+//     flex_container2First_div.classList.toggle("active");
+// };
+
+// main1(); this changes background color when scrolling up above
 
 let click = false;
+
+const unityPlay_Module = (function(){
+
+    'use strict';
+
+    const unityVideo_div = document.querySelector(".unityVideo");
+    const stopVideo_button = document.querySelector(".stopVideo");
+
+    // good thing about this is that once that user views it doesnt play animation
+
+    function stopVideo(){
+        stopVideo_button.addEventListener('click', () => {
+            unityVideo_div.classList.toggle('stopPlay');
+        })
+
+    };
+
+    return {
+        stopVideoPublic: function(){
+            stopVideo();
+        }
+    };
+
+}) ();
 
 const nightMode_SpotLightModule = (function(){
     'use strict';
@@ -38,6 +93,10 @@ const nightMode_SpotLightModule = (function(){
     let spotLight_div = document.querySelector(".spotlight");
    
     const nightMode_li = document.getElementById("night");
+
+    //unity page
+    const flex_container2_id = document.getElementById("flex-container2");
+    const unityVideo_div = document.querySelector(".unityVideo");
 
     function moveSpotlight(){ 
     
@@ -62,6 +121,8 @@ const nightMode_SpotLightModule = (function(){
             menuLetters.classList.toggle('active');
             exploreLetters.classList.toggle('active');
             spotLight_div.classList.toggle('active');
+            unityVideo_div.classList.toggle('active');
+            flex_container2_id.classList.toggle('active');
             
         })
     };
@@ -81,6 +142,7 @@ function main(){
 
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
+    unityPlay_Module.stopVideoPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
@@ -92,7 +154,7 @@ function main(){
 
 
 };
- //test main1
+
 main();
 
 
