@@ -57,6 +57,7 @@
 
 let click = false;
 
+
 const removeMp4_Module = (function(){
 
     'use strict';
@@ -185,8 +186,8 @@ function main(){
 
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
-    unityPlay_Module.stopVideoPublic();
-    removeMp4_Module.LoadPublic();
+    // unityPlay_Module.stopVideoPublic(); umcomment unityVideo later on
+    // removeMp4_Module.LoadPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
