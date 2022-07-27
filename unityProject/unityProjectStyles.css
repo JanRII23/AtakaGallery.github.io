@@ -23,6 +23,7 @@
     border: 20px solid rgb(145,145,145);
     /* z-index: 2; */
     
+    
 }
 
 #flex-container2.active{
@@ -38,6 +39,7 @@
     flex-direction: column;
     /* opacity: .8; */
     
+    
 }
 
 .stopVideo{
@@ -48,7 +50,7 @@
     font-size: 18px;
     font-weight: bold;
     padding: 2px 20px 2px 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background: black;
     color: white;
     
@@ -77,39 +79,41 @@
      width: 0%;
      height: 0vh;
      visibility: hidden;
-     /* transition: background-color 1s ease-in; */
 }
 
 .flex-container2First.active{
 
     /* border: 2px solid red; */
     /* background-color: rgb(145,145,145); */
-     background-color: black;
+    /* background-color: black; */
+    
     visibility: visible;
-    width: 40%;
+    width: 85%;
     height: 96vh;
     display: flex;
     visibility: visible;
-    flex-direction: column;
-    
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    /* border: 2px solid white; */
+    /* border-radius: 8px; */
 }
 
-.zombieModel1{
-    height: 20%;
+.zombieGallery{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid blue; */
 }
 
-.zombieModel2{
-    height: 80%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.silhoutte{
-    height: auto;
-    width: 70%;
+.zombieGalleryReal{
+    width: 98%;
+    height: 92vh;
+    /* transition: background-image 1s ease; */
+    /* border: 2px solid white; */
+  
 }
 
 .flex-container2First.active.night{
@@ -128,10 +132,10 @@
 
 .flex-container2Second.active{
  
-    width: 60%;
+    width: 15%;
     height: 96vh;
-    /* background-color:rgb(145,145,145); */
-    background-color: black;
+    background-color:rgb(145,145,145);
+    /* background-color: black; */
     visibility: visible;
     display: flex;
     flex-direction: column;
@@ -140,6 +144,8 @@
     color:white;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid white; */
+    border: 4px solid white;
 }
 
 .flex-container2Second.active.night{
@@ -150,7 +156,7 @@
 
 }
 
-.gameImg{
+.gameTitle{
     height: 95%;
     width: 95%;
     display: flex;
@@ -162,32 +168,21 @@
 
 }
 
-.gameInfo{
-    /* border: 2px solid white; */
-    width: 30%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+.gameTitle{
+    /* font-weight: bold; */
+    font-size: 25px;
 
 }
 
 
-.flex-container2Second.active h3{
-    text-align: center;
-    line-height: 2em;
-    padding-top: 10px;
- 
-}
 
-
-.gameImgMain{
+/* .gameImgMain{
     border: 5px solid black;
     border-radius: 12px;
     height: auto;
     width: 95%;
 
-}
+} */
 
 
 
