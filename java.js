@@ -100,6 +100,7 @@ const unityPlay_Module = (function(){
     const stopVideo_button = document.querySelector(".stopVideo");
     const flexContainer2First_div = document.querySelector(".flex-container2First");
     const flexContainer2Second_div = document.querySelector(".flex-container2Second");
+    
 
 
     // good thing about this is that once that user views it doesnt play animation
@@ -109,6 +110,9 @@ const unityPlay_Module = (function(){
             unityVideo_div.classList.toggle('stopPlay');
             flexContainer2First_div.classList.toggle('active');
             flexContainer2Second_div.classList.toggle('active');
+            // flexContainer2_id.classList.toggle('easeBackground');
+            document.querySelector(".test1").classList.toggle('active');
+            document.querySelector(".test2").classList.toggle('active');
         })
 
     };
