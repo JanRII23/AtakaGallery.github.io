@@ -110,7 +110,7 @@ background-repeat: no-repeat; */
     visibility: visible;
     opacity: 1;
     background-image:url('./theDelivererAssets/backgroundMaybeFull.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 /* .zombieGallery{
@@ -153,6 +153,7 @@ background-repeat: no-repeat; */
     /* background-image: url('./theDelivererAssets/backgroundMaybe.png'); */
     opacity: 1;
     background-image:url('./theDelivererAssets/backgroundMaybeHalfCopy.png');
+    background-repeat: repeat-y;
 
 }
 
