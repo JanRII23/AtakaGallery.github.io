@@ -111,8 +111,6 @@ const unityPlay_Module = (function(){
             flexContainer2First_div.classList.toggle('active');
             flexContainer2Second_div.classList.toggle('active');
             // flexContainer2_id.classList.toggle('easeBackground');
-            document.querySelector(".test1").classList.toggle('active');
-            document.querySelector(".test2").classList.toggle('active');
         })
 
     };
