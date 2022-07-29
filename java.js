@@ -134,7 +134,7 @@ const nightMode_SpotLightModule = (function(){
     const menuLetters = document.querySelector(".menu");
     const contactButton = document.querySelector(".contact");
     const logoNight = document.querySelector(".menu-toggle");
-
+ 
     let spotLight_div = document.querySelector(".spotlight");
    
     const nightMode_li = document.getElementById("night");
@@ -172,6 +172,7 @@ const nightMode_SpotLightModule = (function(){
             flex_container2_id.classList.toggle('active');
             flexContainer2First_div.classList.toggle('night');
             flexContainer2Second_div.classList.toggle('night');
+
             
         })
     };
