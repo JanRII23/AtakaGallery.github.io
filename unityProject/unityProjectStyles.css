@@ -41,6 +41,8 @@ background-repeat: no-repeat; */
 .flex-container2.ease{
     justify-content: space-between;
     /* align-items: normal; */
+
+    /* thank god for chromDevTools fixed this */
 }
 
 
