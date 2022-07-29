@@ -41,7 +41,44 @@
 
         <!-- <a href = "#"><iframe class = "backgroundVideo" width="560" height="315" src="https://www.youtube.com/embed/tugXDYhF2wg?playlist=tugXDYhF2wg&controls=0&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-            <a href = "#"><iframe class = "backgroundVideo" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href = "#"><iframe 
+            loading = "lazy"; 
+            srcdoc="<style>
+                .test{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    position: relative;
+                }
+                .backgroundThumbnail{
+                    width: 70%;
+                    height: 100%;       
+                    border: 1.25px solid black;    
+          
+                }
+                .play{
+                    z-index: 100;
+                    position: absolute;
+                    color: black;
+                }
+              </style>
+              <a href='https://www.youtube.com/embed/tugXDYhF2wg?playlist=tugXDYhF2wg&controls=0&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=1&mute=1'>
+                <div class= 'test'>
+                    <img class='backgroundThumbnail' src='./images/background_main.png' alt='Background View'>
+                    <div class='play'>
+                        <span>▶</span>
+                    </div>
+                </div>
+              
+              </a>
+              "
+
+            class = "backgroundVideo"     
+            width="560" 
+            height="315"     
+            title="Background View" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <!-- for embedding youtube video make sure to link the same videoID and playlist ID -->
         </a> 
