@@ -192,8 +192,8 @@ function main(){
 
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
-    unityPlay_Module.stopVideoPublic(); 
-    removeMp4_Module.LoadPublic();
+    // unityPlay_Module.stopVideoPublic(); 
+    // removeMp4_Module.LoadPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick

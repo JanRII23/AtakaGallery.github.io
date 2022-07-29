@@ -216,8 +216,8 @@ body .container section{
     bottom: 55px;
     right: 85px;
     opacity: .5;
-    border: 2px solid black;
-    border-radius: 12px;
+    /* border: 2px solid black;
+    border-radius: 12px; */
 }
 
 .flex-container .text1{
