@@ -100,6 +100,7 @@ const unityPlay_Module = (function(){
     const stopVideo_button = document.querySelector(".stopVideo");
     const flexContainer2First_div = document.querySelector(".flex-container2First");
     const flexContainer2Second_div = document.querySelector(".flex-container2Second");
+    const flex_container2_id = document.querySelector(".flex-container2");
     
 
 
@@ -110,6 +111,7 @@ const unityPlay_Module = (function(){
             unityVideo_div.classList.toggle('stopPlay');
             flexContainer2First_div.classList.toggle('active');
             flexContainer2Second_div.classList.toggle('active');
+            flex_container2_id.classList.toggle('ease');
             // flexContainer2_id.classList.toggle('easeBackground');
         })
 
@@ -137,7 +139,7 @@ const nightMode_SpotLightModule = (function(){
     const nightMode_li = document.getElementById("night");
 
     //unity page
-    const flex_container2_id = document.getElementById("flex-container2");
+    const flex_container2_id = document.querySelector(".flex-container2");
     const unityVideo_div = document.querySelector(".unityVideo");
     const flexContainer2First_div = document.querySelector(".flex-container2First");
     const flexContainer2Second_div = document.querySelector(".flex-container2Second");
