@@ -221,8 +221,8 @@ function main(){
 
     nightMode_SpotLightModule.nightModePublic();
     nightMode_SpotLightModule.moveSpotlightPublic();
-    unityPlay_Module.stopVideoPublic(); 
-    removeMp4_Module.LoadPublic();
+    // unityPlay_Module.stopVideoPublic(); 
+    // removeMp4_Module.LoadPublic();
     unityPage_Module.pinClickPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{

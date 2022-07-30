@@ -135,8 +135,9 @@
     text-align: center;
     padding: 15px;
     /* text-transform: uppercase; */
-    font-size: 35px;
+    font-size: 1.5rem;
     /* border: 2px solid red; */
+    /* visibility: hidden; */
 }
 
 
@@ -161,8 +162,47 @@
 .temp{
     width: 100%;
     height: 30%;
- 
+    border: 2px solid red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.galleryMiddleTest{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    /* position: absolute; */
+    z-index: 10;
+    /* opacity: 0.4; */
+    border: 2px solid blue;
+
+  
+}
+
+.galleryMiddleTest:hover{
+    transition: 0.65s;
+    transform: scale(1.35);
+    cursor: auto;
+    bottom: 55px;
+    right: 85px;
+    opacity: .5;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+}
+
+
+.galleryMiddle{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid purple;
+}
+
+
+
 
 
 .galleryPin1{
@@ -237,27 +277,38 @@
     justify-content: center;
 }
 
-.galleryLeft, 
-.galleryRight{
+.galleryLeft1, 
+.galleryRight1{
     /* border: 2px solid red; */
     width: 30%;
     height: 100%;
     display:flex;
+    border: 2px solid blue;
+}
+
+.galleryLeft2,
+.galleryRight2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    border: 2px solid green;
 }
 
 .arrow3{
     animation: slide3 1s ease-in-out infinite;
-    filter: invert(1);
-    width: 100px;
-    height: 50px;
+    filter: invert(.8);
+    width: 80%;
+    height: 60%;
     /* transform: scaleX(-1); */
 }
 
 .arrow4{
     animation: slide4 1s ease-in-out infinite;
-    filter: invert(1);
-    width: 100px;
-    height: 50px;
+    filter: invert(.8);
+    /* width: 100px;
+    height: 50px; */
+    width: 80%;
+    height: 60%;
    
 }
 
@@ -290,26 +341,27 @@
     animation: slide1 1s ease-in-out infinite;
     /* transform: scaleX(-1); */
     /* border: 2px solid blue; */
-    filter: invert(1);
-    width: 100px;
-    height: 50px;
+    filter: invert(.8);
+    width: 80%;
+    height: 60%;
 
 }
 
 .arrow2{
     animation: slide2 1s ease-in-out infinite;
-    filter: invert(1);
-    width: 100px;
-    height: 50px;
+    filter: invert(.8);
+
+    width: 80%;
+    height: 60%;
     
    
 }
 
 .arrow5{
     animation: slide5 1s ease-in-out infinite;
-    filter: invert(1);
-    width: 100px;
-    height: 50px;
+    filter: invert(.8);
+    width: 80px;
+    height: 40px;
     
 }
 
@@ -317,8 +369,7 @@
     0%,
     100%{
         transform: translate(0,20px) rotate(90deg);
-
-        
+            
     }
 
     50%{
