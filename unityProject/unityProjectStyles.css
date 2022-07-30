@@ -96,7 +96,7 @@
      height: 0vh;
      visibility: hidden;
      opacity: 0;
-     transition: all 2.5s linear;
+     transition: all 2s linear;
     
 }
 
@@ -124,15 +124,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+    visibility: hidden;
 }
-.galleryInfo h1{
+
+.galleryInfo.active{
+    visibility: visible;
+}
+
+.galleryInfo p{
     text-align: center;
-    padding: 10px;
-    text-transform: uppercase;
+    padding: 15px;
+    /* text-transform: uppercase; */
     font-size: 35px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
+
 
 /* .galleryPin1,
 .galleryPin2,
@@ -150,6 +156,7 @@
 .galleryPin2{
     width: 100%;
     height: 30%;
+    /* border: 2px solid */
 }
 .temp{
     width: 100%;
@@ -158,8 +165,7 @@
 }
 
 
-.galleryPin1,
-.galleryPin2{
+.galleryPin1{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -167,29 +173,57 @@
     /* padding-bottom: 20px; */
 }
 
+.galleryPin2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .galleryPin_real{
     filter: grayscale(90%);
     cursor: pointer;
     animation: pinMove 1s ease-in-out infinite;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     /* border: 2px solid red; */
 }
 
 .galleryPin_real:hover{
     filter:grayscale(40%);
+    transform: scale(1.2);
+    animation: none;
 
 }
 
-.galleryLeft,
-.galleryRight,
+.galleryPin_real.active{
+    transform: scale(1.2);
+    animation: none;
+    filter:grayscale(40%);
+}
+
 .arrowContainer1,
 .arrowContainer2,
 .arrowContainer3,
 .arrowContainer4{
-    width: 25%;
+    width: 20%;
     height: 100%;
     display:flex;
+    /* border: 2px solid green; */
+    visibility: hidden;
 }
+
+.arrow5{
+    visibility:hidden;
+}
+
+.arrowContainer1.active,
+.arrowContainer2.active,
+.arrowContainer3.active,
+.arrowContainer4.active,
+.arrow5.active{
+    visibility: visible;
+}
+
+
 
 .arrowContainer3{
     
@@ -203,15 +237,27 @@
     justify-content: center;
 }
 
+.galleryLeft, 
+.galleryRight{
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 100%;
+    display:flex;
+}
+
 .arrow3{
     animation: slide3 1s ease-in-out infinite;
     filter: invert(1);
+    width: 100px;
+    height: 50px;
     /* transform: scaleX(-1); */
 }
 
 .arrow4{
     animation: slide4 1s ease-in-out infinite;
     filter: invert(1);
+    width: 100px;
+    height: 50px;
    
 }
 
@@ -245,14 +291,39 @@
     /* transform: scaleX(-1); */
     /* border: 2px solid blue; */
     filter: invert(1);
+    width: 100px;
+    height: 50px;
 
 }
 
 .arrow2{
     animation: slide2 1s ease-in-out infinite;
     filter: invert(1);
+    width: 100px;
+    height: 50px;
+    
    
-   
+}
+
+.arrow5{
+    animation: slide5 1s ease-in-out infinite;
+    filter: invert(1);
+    width: 100px;
+    height: 50px;
+    
+}
+
+@keyframes slide5{
+    0%,
+    100%{
+        transform: translate(0,20px) rotate(90deg);
+
+        
+    }
+
+    50%{
+        transform: translate(0,0px) rotate(90deg);
+    } 
 }
 
 @keyframes slide1{
@@ -261,10 +332,13 @@
       
 
         transform: translate(0,20px) rotate(135deg);
+        /* filter: invert(1); */
+     
     }
 
     50%{
         transform: translate(20px,0) rotate(135deg);
+        /* filter: invert(0); */
     } 
 }
 
@@ -286,7 +360,7 @@
 
     0%,
     100%{
-        transform: translate(0,0) rotate(180deg);
+        transform: translate(0,0) rotate(180deg) ;
     }
 
     50%{
@@ -353,7 +427,7 @@
     height: 0vh;
     visibility: hidden;
     opacity: 0;
-    transition: all 2.5s linear;
+    transition: all 2s linear;
 }
 
 .flex-container2Second.active{
