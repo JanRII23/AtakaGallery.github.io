@@ -60,8 +60,16 @@ let click = false;
 const unityPage_Module = (function(){
     'use strict';
 
-    const galleryyPint_real_img = document.querySelector('.galleryPin_real');
-    const galleryPanels_div = document.querySelector('.galleryPanels');
+    const galleryPin_real_real_img = document.querySelector('.galleryPin_real');
+    const gallerySubPanel1_div = document.querySelector('.gameOne');
+    const gallerySubPanel2_div = document.querySelector('.gameTwo');
+    const gallerySubPanel3_div = document.querySelector('.gameThree');
+    const gallerySubPanel4_div = document.querySelector('.gameFour');
+    const gallerySubPanel5_div = document.querySelector('.gameFive');
+    const gameTitle_p1 = document.querySelector('.gameTitle1');
+    const gameTitle_p2 = document.querySelector('.gameTitle2');
+
+
     // const arrowContainer1_div = document.querySelector('.arrowContainer1')
     // const arrowContainer2_div = document.querySelector('.arrowContainer2')
     // const arrowContainer3_div = document.querySelector('.arrowContainer3')
@@ -69,9 +77,16 @@ const unityPage_Module = (function(){
     // const arrowContainer5_div = document.querySelector('.arrow5')
 
     function pinClick(){
-        galleryyPint_real_img.addEventListener('click', () => {
-            galleryyPint_real_img.classList.toggle('active');
-            galleryPanels_div.classList.toggle('active');
+        galleryPin_real_real_img.addEventListener('click', () => {
+            galleryPin_real_real_img.classList.toggle('active');
+            gallerySubPanel1_div.classList.toggle('active');
+            gallerySubPanel2_div.classList.toggle('active');
+            gallerySubPanel3_div.classList.toggle('active');
+            gallerySubPanel4_div.classList.toggle('active');
+            gallerySubPanel5_div.classList.toggle('active');
+            gameTitle_p1.classList.toggle('active');
+            gameTitle_p2.classList.toggle('active');
+
             // arrowContainer1_div.classList.toggle('active');
             // arrowContainer2_div.classList.toggle('active');
             // arrowContainer3_div.classList.toggle('active');
@@ -80,9 +95,13 @@ const unityPage_Module = (function(){
         })
     };
 
+
     return {
         pinClickPublic: function(){
             pinClick();
+        },
+        gameplayClickPublic: function(){
+            gameplayClick();
         }
     }
 }) ();
@@ -94,6 +113,11 @@ const removeMp4_Module = (function(){
     // const backgroundVideoLanding_tag = document.querySelector(".backgroundVideo");
     const unityVideoLogo_tag = document.querySelector(".unityVideo_real");
     const backgroundVideoLanding_tag = document.querySelector(".backgroundVideo");
+    const galleryOne_frame = document.querySelector('.galleryOne');
+    const galleryTwo_frame = document.querySelector('.galleryTwo');
+    const galleryThree_frame = document.querySelector('.galleryThree');
+    const galleryFour_frame = document.querySelector('.galleryFour');
+    const galleryFive_frame = document.querySelector('.galleryFive');
     
     
     
@@ -104,6 +128,11 @@ const removeMp4_Module = (function(){
             // backgroundVideoLanding_tag.muted = true;
             // backgroundVideoLanding_tag.loop = true;
             // backgroundVideoLanding_tag.autoplay = true;
+            galleryOne_frame.src = 'https://www.youtube.com/embed/NHiuXA_k9jE?&controls=1&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=0&mute=1';
+            galleryTwo_frame.src = 'https://www.youtube.com/embed/4e0oxj06_1M?controls=1&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=0&mute=1';
+            galleryThree_frame.src = 'https://www.youtube.com/embed/IDoB09ertLA?controls=1&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=0&mute=1';
+            galleryFour_frame.src = 'https://www.youtube.com/embed/YOGBTAUUNU0?controls=1&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=0&mute=1';
+            galleryFive_frame.src = 'https://www.youtube.com/embed/sQ7zrq1c73c?controls=1&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=0&mute=1';
             backgroundVideoLanding_tag.src = 'https://www.youtube.com/embed/tugXDYhF2wg?playlist=tugXDYhF2wg&controls=0&showinfo=0&modestbranding=1&rel=0&autoplay=1&loop=1&mute=1';
             unityVideoLogo_tag.src = './unityProject/theDelivererAssets/Unity2.0.mp4';
             unityVideoLogo_tag.muted = true;
@@ -225,7 +254,7 @@ function main(){
     nightMode_SpotLightModule.moveSpotlightPublic();
     unityPlay_Module.stopVideoPublic(); 
     removeMp4_Module.LoadPublic();
-    // unityPage_Module.pinClickPublic();
+    unityPage_Module.pinClickPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
