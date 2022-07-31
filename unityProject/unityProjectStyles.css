@@ -127,17 +127,23 @@
     align-items: center;
     /* justify-content: space-evenly; */
     justify-content: center;
- 
+    /* visibility: hidden; */
 }
 
 .galleryPanels div{
     width: 14%;
     height: 70%;
-    /* background-color: black; */
-    /* border: 2px solid purple; */
+    background-color: black;
+    border-radius: 12px;
+    border: 6px solid black;
     margin-right: 15px;
     display: flex;
     justify-content: flex-start;
+    
+}
+
+.galleryPanels.active{
+    visibility: visible;    
 }
 
 
@@ -155,6 +161,27 @@
 
     
     /* the width and height in this one is the one that set the size when clicking on the play button */
+}
+
+.galleryPin_real{
+    filter: grayscale(90%);
+    cursor: pointer;
+    animation: pinMove 1s ease-in-out infinite;
+    padding-bottom: 40px;
+   
+}
+
+.galleryPin_real:hover{
+    filter:grayscale(40%);
+    transform: scale(1.2);
+    animation: none;
+
+}
+
+.galleryPin_real.active{
+    transform: scale(1.2);
+    animation: none;
+    filter:grayscale(40%);
 }
 
 

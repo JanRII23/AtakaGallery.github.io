@@ -61,20 +61,22 @@ const unityPage_Module = (function(){
     'use strict';
 
     const galleryyPint_real_img = document.querySelector('.galleryPin_real');
-    const arrowContainer1_div = document.querySelector('.arrowContainer1')
-    const arrowContainer2_div = document.querySelector('.arrowContainer2')
-    const arrowContainer3_div = document.querySelector('.arrowContainer3')
-    const arrowContainer4_div = document.querySelector('.arrowContainer4')
-    const arrowContainer5_div = document.querySelector('.arrow5')
+    const galleryPanels_div = document.querySelector('.galleryPanels');
+    // const arrowContainer1_div = document.querySelector('.arrowContainer1')
+    // const arrowContainer2_div = document.querySelector('.arrowContainer2')
+    // const arrowContainer3_div = document.querySelector('.arrowContainer3')
+    // const arrowContainer4_div = document.querySelector('.arrowContainer4')
+    // const arrowContainer5_div = document.querySelector('.arrow5')
 
     function pinClick(){
         galleryyPint_real_img.addEventListener('click', () => {
             galleryyPint_real_img.classList.toggle('active');
-            arrowContainer1_div.classList.toggle('active');
-            arrowContainer2_div.classList.toggle('active');
-            arrowContainer3_div.classList.toggle('active');
-            arrowContainer4_div.classList.toggle('active');
-            arrowContainer5_div.classList.toggle('active');
+            galleryPanels_div.classList.toggle('active');
+            // arrowContainer1_div.classList.toggle('active');
+            // arrowContainer2_div.classList.toggle('active');
+            // arrowContainer3_div.classList.toggle('active');
+            // arrowContainer4_div.classList.toggle('active');
+            // arrowContainer5_div.classList.toggle('active');
         })
     };
 
@@ -141,7 +143,7 @@ const unityPlay_Module = (function(){
             flexContainer2First_div.classList.toggle('active');
             flexContainer2Second_div.classList.toggle('active');
             flex_container2_id.classList.toggle('ease');
-            galleryInfo_div.classList.toggle('active');
+            // galleryInfo_div.classList.toggle('active');
             // flexContainer2_id.classList.toggle('easeBackground');
         })
 
@@ -223,7 +225,7 @@ function main(){
     nightMode_SpotLightModule.moveSpotlightPublic();
     unityPlay_Module.stopVideoPublic(); 
     removeMp4_Module.LoadPublic();
-    unityPage_Module.pinClickPublic();
+    // unityPage_Module.pinClickPublic();
 
     document.querySelector("body").addEventListener('click', ()=>{
         click = !click; //this is a neat trick
