@@ -31,6 +31,8 @@
     
 }
 
+
+
 .flex-container2.ease{
     justify-content: space-between;
     /* align-items: normal; */
@@ -96,7 +98,7 @@
      height: 0vh;
      visibility: hidden;
      opacity: 0;
-     transition: all 2s linear;
+     transition: all 1.5s linear;
     
 }
 
@@ -123,11 +125,32 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     /* justify-content: space-evenly; */
     justify-content: center;
     /* visibility: hidden; */
+    /* border: 2px solid blue; */
 }
+
+.galleryPanelReal{
+    border: 2px solid red;
+    width: 95%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(3,32.3333%);
+    grid-template-columns: repeat(3,32.333%);
+    gap: 1%;
+    /* padding: 1%; */
+}
+
+.galleryInfo{
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 12px;
+
+}
+
 
 
 .gameOne,
@@ -135,17 +158,47 @@
 .gameThree,
 .gameFour,
 .gameFive{
-    width: 14%;
-    height: 70%;
-    background-color: black;
-    border-radius: 12px;
-    border: 4px solid black;
-    margin-right: 15px;
-    display: flex;
-    justify-content: flex-start;
-    visibility: hidden;
     position: relative;
+    padding-bottom: 56.25%;
+    /* border: 3px solid white; */
+    visibility: hidden;
+    /* filter:grayscale(1); */
 }
+
+.gameOne iframe,
+.gameTwo iframe,
+.gameThree iframe,
+.gameFour iframe,
+.gameFive iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoOne,
+.videoTwo,
+.videoThree,
+.videoFour,
+.videoFive{
+    
+    /* border-radius: 12px; */
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    /* height: auto; */
+    
+    
+}
+
+.galleryInfo{
+    visibility: hidden;
+}
+
+.galleryInfo.active{
+    visibility: visible;
+}
+
 
 
 .gameOne.active,
@@ -157,32 +210,17 @@
     
 }
 
+
+
 .gameOne.active:hover,
 .gameTwo.active:hover,
 .gameThree.active:hover,
 .gameFour.active:hover,
 .gameFive.active:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    /* filter:grayscale(0); */
 }
 
-.galleryOne,
-.galleryTwo,
-.galleryThree,
-.galleryFour,
-.galleryFive{ 
-    /* border: 2px solid red; */
-    width: 100%;
-    height: 100%;
-    /* min-width: 1000px;
-    min-height: 600px; */
-    /* width: 190px;
-    height: 580px; */
-
-    /* The problem with this one is that if i set is as a responsive size it does not scale down. But if i were to set a min-width and height and px(s) it scales but it is not responsive */
-
-    
-    /* the width and height in this one is the one that set the size when clicking on the play button */
-}
 
 
 
@@ -208,87 +246,14 @@
 }
 
 
-.gameTitle1,
-.gameTitle2{
+.gameTitle1{
     font-size: 20px;
     margin-right: 15px;
 }
 
-.gameTitle1.active,
-.gameTitle2.active{
+.gameTitle1.active{
     display:none;
 }
-
-
-@keyframes slide5{
-    0%,
-    100%{
-        transform: translate(0,20px) rotate(90deg);
-            
-    }
-
-    50%{
-        transform: translate(0,0px) rotate(90deg);
-    } 
-}
-
-@keyframes slide1{
-    0%,
-    100%{
-      
-
-        transform: translate(0,20px) rotate(135deg);
-        /* filter: invert(1); */
-     
-    }
-
-    50%{
-        transform: translate(20px,0) rotate(135deg);
-        /* filter: invert(0); */
-    } 
-}
-
-@keyframes slide2{
-    0%,
-    100%{
- 
-        transform: translate(20px,20px) rotate(45deg);
-    }
-
-    50%{
-        transform: translate(0,0) rotate(45deg);
-    } 
-}
-
-
-@keyframes slide3{
-
-
-    0%,
-    100%{
-        transform: translate(0,0) rotate(180deg) ;
-    }
-
-    50%{
-        transform: translate(20px,0) rotate(180deg);
-    } 
-} 
-
-@keyframes slide4{
-
-    0%,
-    100%{
-        /* transform: translate(0,0); */
-        transform: translate(20px,0);
-    }
-
-    50%{
-        /* transform: translate(10px,0); */
-        transform: translate(0,0);
-    } 
-}
-
-
 
 @keyframes pinMove{
 
@@ -306,22 +271,6 @@
 
 
 
-/* .zombieGallery{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.zombieGalleryReal{
-    width: 98%;
-    height: 92vh;
-    transition: background-image 1s ease;
-  
-} */
-
 .flex-container2First.active.night{
 
     /* background: rgb(67, 67, 67); */
@@ -333,7 +282,7 @@
     height: 0vh;
     visibility: hidden;
     opacity: 0;
-    transition: all 2s linear;
+    transition: all 1.5s linear;
 }
 
 .flex-container2Second.active{
